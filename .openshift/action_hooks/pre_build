@@ -1,0 +1,10 @@
+#!/bin/bash
+# The logic to start up your application should be put in this
+# script. The application will work only if it binds to
+# $OPENSHIFT_DIY_IP:8080
+if ! [[ -d ${OPENSHIFT_DATA_DIR}play-2.2.1 ]]; then
+  cd ${OPENSHIFT_DATA_DIR}
+  wget http://downloads.typesafe.com/play/2.2.1/play-2.2.1.zip
+  unzip ${OPENSHIFT_DATA__DIR}play-2.2.1.zip
+  rm ${OPENSHIFT_DATA_DIR}play-2.2.1.zip
+fi
