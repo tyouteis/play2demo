@@ -11,4 +11,4 @@ export PLAY_LOG_PATH=${OPENSHIFT_DIY_LOG_DIR}
 export _JAVA_OPTIONS="-Xms256M -Xmx512M"
 
 #run with openshift id
-${OPENSHIFT_DATA_DIR}play-2.2.1/play -Dhttp.port=${OPENSHIFT_DIY_PORT} -Dhttp.address=${OPENSHIFT_DIY_IP} run
+${OPENSHIFT_DATA_DIR}play-2.2.1/play -Dhttp.port=${OPENSHIFT_DIY_PORT} -Dhttp.address=${OPENSHIFT_DIY_IP} start
